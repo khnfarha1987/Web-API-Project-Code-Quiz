@@ -5,6 +5,16 @@
 
 
 
+# coding quiz screenshots:
+![alt](./images/img-1.png)
+![alt](./images/img-2.png)
+![alt](./images/img-3.png)
+![alt](./images/img-4.png)
+![alt](./images/img-5.png)
+![alt](./images/img-6.png)
+![alt](./images/img-7.png)
+![alt](./images/img-8.png)
+![alt](./images/img-9.png)
 
 
 
