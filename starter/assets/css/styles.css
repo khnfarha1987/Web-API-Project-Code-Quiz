@@ -87,6 +87,7 @@ li:nth-child(odd) {
   right: 10px;
 }
 
+/* added button class to make changes and show the answer*/
 .btn {
   border-radius: 20px;
   border: 0;
