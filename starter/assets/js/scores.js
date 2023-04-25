@@ -19,10 +19,7 @@ for (var i = 0; i < localStorage.length; i++) {
         highScoreElement.append(lineItem);
     }
 }
-
-//highScoreElement.textContent = highScoresInd;
-//window.alert(highScores);
-
+//When the game ends, it should display their score and give the user the ability to save their initials and their score
 scoreClearButtonElement.addEventListener('click', function () {
     localStorage.clear();
     window.location.reload();

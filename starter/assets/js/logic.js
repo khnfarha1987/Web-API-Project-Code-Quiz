@@ -1,3 +1,4 @@
+
 var startQuizButtonEl = document.getElementById('start');
 var timeLeft = 60; // Global time left assignment counter
 var htmlTimeLeft = document.getElementById('time');
@@ -54,6 +55,7 @@ answer4BtnEl.addEventListener("mouseover", function () {
 
 });
 
+//A start button that when clicked a timer starts and the first question appears.
 startQuizButtonEl.addEventListener('click', function () {
     startQuizButtonEl.style.display = 'none';
     startQuizSection.style.display = 'none';
@@ -70,7 +72,7 @@ startQuizButtonEl.addEventListener('click', function () {
 
         score = 0; // move the score back to 0 to check for another wrong answer.
 
-
+        //Questions contain buttons for each answer.
         if (timeLeft >= 1 && finalAnswerCheck !== 1) {
             //Assign text content to the question from our object
             questionTitle.textContent = questionsObject.correct[questionNumber];

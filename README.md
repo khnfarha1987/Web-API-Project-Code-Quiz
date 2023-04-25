@@ -2,9 +2,10 @@
 # Updated html files with buttons and create one div for answers correct or wrong.
 # Added JS files logic.js, questions.js and scores.js
 # Added button class to make changes and show the answer
+# A start button that when clicked a timer starts and the first question appears.
+ 
 
-
-
+# When the game ends, it should display their score and give the user the ability to save their initials and their score
 # coding quiz screenshots:
 ![alt](./images/img-1.png)
 ![alt](./images/img-2.png)
