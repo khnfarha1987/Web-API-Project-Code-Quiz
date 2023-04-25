@@ -9,5 +9,3 @@
 
 
 
-# Screenshot recording of the coding quiz.
-![alt](./video/recording.mov)
