@@ -68,6 +68,7 @@ startQuizButtonEl.addEventListener('click', function () {
     var timeInterval = setInterval(function () {
         if (score === 1) { // For any wrong answer, remove a point
             highScore -= 10;
+            timeLeft -= 10;
         }
 
         score = 0; // move the score back to 0 to check for another wrong answer.
@@ -274,14 +275,8 @@ startQuizButtonEl.addEventListener('click', function () {
                             questionNumber = 4; // Move to the next question which is the second question
                             answerNumber = 3;
                             break;
-
-
                     }
                 }
-
-
-
-
             });
 
             answer3BtnEl.addEventListener("click", function () {
@@ -434,13 +429,9 @@ startQuizButtonEl.addEventListener('click', function () {
                             //Exit the quiz/timer.
                             clearInterval(timeInterval);
                             break;
-
                     }
-
                 }
-
             });
-
         }
         else if (timeLeft <= 0) {
             timeLeft = 0;
@@ -452,9 +443,10 @@ startQuizButtonEl.addEventListener('click', function () {
             answer3BtnEl.style.display = 'none';
             answer4BtnEl.style.display = 'none';
             answerCorrectWrong.style.display = 'none'; // When time is over correct or wrong will go away.
-            //answerCorrectWrong.style.display=""; // Enables text content on correct and wrong answers
-            questionTitle.textContent = "Game Over!. Try again by clicking on \"Click Start Quiz\"";
-
+            enterInitialsEl.classList.remove('hide');
+            questionDisplayEl.classList.add('hide');
+            finalScoreDisplay.textContent = highScore;
+            enterInitialsEl.style.display = ""; // Display Message Enter initials
             clearInterval(timeInterval);
             htmlTimeLeft.textContent = timeLeft;
             //gridContainer.appendChild(questionDisplayEl);
@@ -491,8 +483,6 @@ submitScoreEl.addEventListener("click", function () { // Submit high scores
     if (!localStorage.length) {
         localStorage.setItem("test", "test");
     }
-
-
     for (var i = 0; i < localStorage.length; i++) {
 
         var checkUser = "";
@@ -515,8 +505,6 @@ submitScoreEl.addEventListener("click", function () { // Submit high scores
 
         }
         if (quizUserDetails == checkUserValue[0] && highScore == checkUserValue[1]) {
-
-
             // Only insert if the current highScore is higher, 
             // otherwise let the user know they had a higher score alreay
             localStorage.setItem(quizUserDetails, value); // Value is equal to 
@@ -543,6 +531,5 @@ submitScoreEl.addEventListener("click", function () { // Submit high scores
         }
 
     }
-
 });
 
