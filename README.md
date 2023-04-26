@@ -9,7 +9,9 @@ Coding quiz showing question with multiple anwers. If we select right answer tha
 
 # Application URL:
 https://khnfarha1987.github.io/Web-API-Project-Code-Quiz/
-# 
+
+# video of coding quiz project:
+![alt](./images/Untitled.gif)
 
 
 
