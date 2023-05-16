@@ -370,7 +370,6 @@ startQuizButtonEl.addEventListener('click', function () {
 
                     switch (answer4BtnEl.textContent) {
                         case "Numbers":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
