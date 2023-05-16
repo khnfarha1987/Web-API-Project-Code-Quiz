@@ -15,14 +15,14 @@ Challenge 6 : In this Challenge, create a timed, multiple-choice coding quiz tha
  * THEN I can save my initials and score
 
 # Description of this Project:
- * User story of this project:
-  * AS A coding boot camp student-
-  * I WANT to take a timed quiz on JavaScript fundamentals that stores high scores-
-  * SO THAT I can gauge my progress compared to my peers
+  User story of this project:
+   * AS A coding boot camp student-
+   * I WANT to take a timed quiz on JavaScript fundamentals that stores high scores-
+   * SO THAT I can gauge my progress compared to my peers
 
-  We need to write a timed coding quiz with multiple-choice questions. When the user has finished the quiz or the time was over then the user should be able to save their initials and score to a high scores table.
+   We need to write a timed coding quiz with multiple-choice questions. When the user has finished the quiz or the time was over then the user should be able to save their initials and score to a high scores table.
 
-  Coding quiz showing question with multiple anwers. If we select right answer than score will +10 and if we will give wrong answer then timer will be -10second reduce. 
+   Coding quiz showing question with multiple anwers. If we select right answer than score will +10 and if we will give wrong answer then timer will be -10second reduce. 
 
 # Technologies Used:
  * HTML
