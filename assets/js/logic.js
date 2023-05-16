@@ -109,7 +109,6 @@ startQuizButtonEl.addEventListener('click', function () {
             choice.appendChild(answer1BtnEl);
             timeLeft -= 1;
             htmlTimeLeft.textContent = timeLeft;
-            console.log("time left:" + timeLeft);
 
 
             answer1BtnEl.addEventListener("click", function () {
