@@ -19,9 +19,7 @@ var answer4BtnEl = document.getElementById('answer4'); // Start Quiz button Btn 
 var enterInitialsEl = document.getElementById("end-screen");
 var finalScoreDisplay = document.getElementById('final-score');
 var enterInitialText = document.getElementById('initials');
-
 var answerCorrectWrong = document.getElementById('answerCorrectWrong');
-
 var submitScoreEl = document.getElementById('submit');
 
 answer1BtnEl.style.display = 'none';
@@ -113,7 +111,6 @@ startQuizButtonEl.addEventListener('click', function () {
             answer1BtnEl.addEventListener("click", function () {
 
                 if (questionTitle.textContent === "The condition statement if/else is enclosed with the following:" && answer1BtnEl.textContent === "Parentheses") {
-                    console.log("Correct");
                     // timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                     questionNumber = 2; // Move to the next question which is the third questions
                     answerNumber = 4;
@@ -128,7 +125,6 @@ startQuizButtonEl.addEventListener('click', function () {
 
                     switch (answer1BtnEl.textContent) {
                         case "Strings":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
@@ -138,7 +134,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 1;
                             break;
                         case "Number of strings":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -149,7 +144,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 2;
                             break;
                         case "Javascript":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -160,7 +154,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 3;
                             break;
                         case "Commas":
-                            console.log("Correct");
                             //timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                             //questionNumber = 2; // Move to the next question
                             //game over
@@ -172,7 +165,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             //window.alert("Game Over"); Game is over at this point.
                             questionNumber = 0; // Game is over, no more questions to show.
                             answerNumber = 0; // Game is over, no more answers to show.
-                            console.log("I'm here" + timeInterval);
                             answer1BtnEl.style.display = 'none';
                             answer2BtnEl.style.display = 'none';
                             answer3BtnEl.style.display = 'none';
@@ -200,7 +192,6 @@ startQuizButtonEl.addEventListener('click', function () {
             answer2BtnEl.addEventListener("click", function () {
 
                 if (questionTitle.textContent === "Strings must be enclosed with:" && answer2BtnEl.textContent === "Curly brackets") {
-                    console.log("Correct");
                     //timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                     //questionNumber = 2; // Move to the next question
                     //game over
@@ -212,7 +203,6 @@ startQuizButtonEl.addEventListener('click', function () {
                     //window.alert("Game Over"); Game is over at this point.
                     questionNumber = 0; // Game is over, no more questions to show.
                     answerNumber = 0; // Game is over, no more answers to show.
-                    console.log("I'm here" + timeInterval);
                     answer1BtnEl.style.display = 'none';
                     answer2BtnEl.style.display = 'none';
                     answer3BtnEl.style.display = 'none';
@@ -241,7 +231,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 1;
                             break;
                         case "Curly Brackets":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -250,10 +239,8 @@ startQuizButtonEl.addEventListener('click', function () {
                             score = 1; // Give user a 10+ score
                             questionNumber = 2; // Move to the next question which is the second question
                             answerNumber = 4;
-                            console.log(score);
                             break;
                         case "Other arrays":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -263,7 +250,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 2;
                             break;
                         case "Terminal/bash":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -279,7 +265,6 @@ startQuizButtonEl.addEventListener('click', function () {
             answer3BtnEl.addEventListener("click", function () {
 
                 if (questionTitle.textContent === "Commonly used datatypes DO NOT include?" && answer3BtnEl.textContent === "Alerts") {
-                    console.log("Correct");
                     //timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                     questionNumber = 1; // Move to the next question which is the second question
                     answerNumber = 1;
@@ -289,7 +274,6 @@ startQuizButtonEl.addEventListener('click', function () {
                     answerCorrectWrong.style.borderTop = "solid #800080";
                     answerCorrectWrongGrid.appendChild(answerCorrectWrong);
                 } else if (questionTitle.textContent === "A very useful tool to debug arrays is:" && answer3BtnEl.textContent === "For loops") {
-                    console.log("Correct");
                     //timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                     questionNumber = 4; // Move to the next question which  is the fifth question
                     answerNumber = 3;
@@ -299,7 +283,6 @@ startQuizButtonEl.addEventListener('click', function () {
                     answerCorrectWrong.style.borderTop = "solid #800080";
                     answerCorrectWrongGrid.appendChild(answerCorrectWrong);
                 } else if (questionTitle.textContent === "The condition statement if/else is enclosed with the following:" && answer3BtnEl.textContent === "Quotes") {
-                    console.log("Inside the case now");
                     answerCorrectWrong.style.display = "";
                     answerCorrectWrong.textContent = "Wrong!";
                     new Audio('./assets/sfx/incorrect.wav').play();
@@ -313,7 +296,6 @@ startQuizButtonEl.addEventListener('click', function () {
 
                     switch (answer3BtnEl.textContent) {
                         case "Booleans":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -323,11 +305,9 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 2;
                             break;
                         case "Quotes":
-                            console.log("Inside the case now");
                             score = 1; // Give user a 10+ score
                             questionNumber = 0; // Game is over, no more questions to show.
                             answerNumber = 0; // Game is over, no more answers to show.
-                            console.log("I'm here" + timeInterval);
                             answer1BtnEl.style.display = 'none';
                             answer2BtnEl.style.display = 'none';
                             answer3BtnEl.style.display = 'none';
@@ -354,7 +334,6 @@ startQuizButtonEl.addEventListener('click', function () {
             answer4BtnEl.addEventListener("click", function () {
 
                 if (questionTitle.textContent === "Arrays can be used to store the following" && answer4BtnEl.textContent === "All of the above") {
-                    console.log("Correct");
                     // timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
                     //Game is overquestionNumber = 4; // Move to the next question
                     questionNumber = 3; // Move to the next question which is the fourth question
@@ -378,7 +357,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 1;
                             break;
                         case "Square Brackets":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -388,7 +366,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 4;
                             break;
                         case "Console.log":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -398,7 +375,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             answerNumber = 3;
                             break;
                         case "Parentheses":
-                            console.log("Inside the case now");
                             answerCorrectWrong.style.display = "";
                             answerCorrectWrong.textContent = "Wrong!";
                             new Audio('./assets/sfx/incorrect.wav').play();
@@ -408,7 +384,6 @@ startQuizButtonEl.addEventListener('click', function () {
                             //answerNumber = 3;
                             questionNumber = 0; // Game is over, no more questions to show.
                             answerNumber = 0; // Game is over, no more answers to show.
-                            console.log("I'm here" + timeInterval);
                             answer1BtnEl.style.display = 'none';
                             answer2BtnEl.style.display = 'none';
                             answer3BtnEl.style.display = 'none';
@@ -431,7 +406,6 @@ startQuizButtonEl.addEventListener('click', function () {
         }
         else if (timeLeft <= 0) {
             timeLeft = 0;
-            console.log("I'm here" + timeInterval);
             questionNumber = 0; // Reset all questions
             answerNumber = 0; // Reset all possible answers.
             answer1BtnEl.style.display = 'none';
