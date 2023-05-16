@@ -1,7 +1,7 @@
 var quizUsers = "";
 var substringTest = "";
 var highScoresInd = "";
-var highScoreElement = document.getElementById('highscores')
+var highScoreElement = document.getElementById('highscores');
 var scoreClearButtonElement = document.getElementById('clear');
 
 for (var i = 0; i < localStorage.length; i++) {
@@ -11,7 +11,7 @@ for (var i = 0; i < localStorage.length; i++) {
     substringTest = quizUsers.substring(0, 4)
     if (substringTest == "quiz") {
         checkUserValue = quizUsers.split(",");
-        var userName = checkUserValue[0]
+        var userName = checkUserValue[0];
         highScoresInd = "User " + userName.substring(4) + " high score is: " + checkUserValue[1] + "\n";
         var lineItem = document.createElement('LI');
         var lineItemText = document.createTextNode(highScoresInd);

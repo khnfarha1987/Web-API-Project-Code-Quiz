@@ -9,7 +9,7 @@ var highScore = 50; // Score add fix for ticking timer.
 var finalAnswerCheck = 0;
 var startQuizSection = document.getElementById('start-screen');
 var questionTitle = document.getElementById('question-title');
-var choice = document.getElementById('choices')
+var choice = document.getElementById('choices');
 var questionNumber = 0; // Track the question answered.
 var answerNumber = 0;
 var answer1BtnEl = document.getElementById('answer1'); // Start Quiz button Btn El
@@ -22,7 +22,7 @@ var enterInitialText = document.getElementById('initials');
 
 var answerCorrectWrong = document.getElementById('answerCorrectWrong');
 
-var submitScoreEl = document.getElementById('submit')
+var submitScoreEl = document.getElementById('submit');
 
 answer1BtnEl.style.display = 'none';
 answer2BtnEl.style.display = 'none';
@@ -109,7 +109,7 @@ startQuizButtonEl.addEventListener('click', function () {
             choice.appendChild(answer1BtnEl);
             timeLeft -= 1;
             htmlTimeLeft.textContent = timeLeft;
-            console.log("time left:" + timeLeft)
+            console.log("time left:" + timeLeft);
 
 
             answer1BtnEl.addEventListener("click", function () {
