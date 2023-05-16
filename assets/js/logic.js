@@ -87,7 +87,6 @@ startQuizButtonEl.addEventListener('click', function () {
         choice.append(answer3BtnEl);
         choice.append(answer4BtnEl);
         htmlTimeLeft.textContent = timeLeft;
-        console.log("time left:" + timeLeft)
         //timeLeft -= 1;
 
         if (timeLeft >= 1 && finalAnswerCheck !== 1) {
