@@ -37,7 +37,8 @@ Challenge 6 : In this Challenge, create a timed, multiple-choice coding quiz tha
  ![alt](./images/img-2.png)
 
 # Video Link of this Project:
-![alt](./images/Untitled.gif)
+![alt](./images/mov.gif)
+
 
  # Application GitHub URL:
 https://github.com/khnfarha1987/Web-API-Project-Code-Quiz
